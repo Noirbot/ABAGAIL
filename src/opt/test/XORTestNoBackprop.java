@@ -16,7 +16,7 @@ import func.nn.FeedForwardNeuralNetworkFactory;
  * @author Jesse Rosalia <https://github.com/theJenix>
  * @date 2013-03-05
  */
-public class TestNNOptimizationNoBackprop {
+public class XORTestNoBackprop {
 
     /**
      * Tests out the perceptron with the classic xor test
