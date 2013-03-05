@@ -25,11 +25,9 @@ public class CSVDataSetReaderWithLabelTest {
         DataSetReader dsr = new CSVDataSetReaderWithLabel(fp, 0);
         // read in the raw data
         DataSet ds = dsr.read();
-        // split out the label
-        //LabelSplitFilter lsf = new LabelSplitFilter();
-        //lsf.filter(ds);
-        //ContinuousToDiscreteFilter ctdf = new ContinuousToDiscreteFilter(10);
-        //ctdf.filter(ds);
+        
+        ContinuousToDiscreteFilter ctdf = new ContinuousToDiscreteFilter(10);
+        ctdf.filter(ds);
         //System.out.println(ds);
         
         // There is an issue with the filters removing the datasetdescription.
